@@ -1,0 +1,12 @@
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.dll
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.pdb
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.AssemblyReference.cache
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.dll
+D:\1651\DrinkMachineLibrary\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.pdb
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.dll
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.pdb
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.AssemblyReference.cache
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.dll
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.pdb
