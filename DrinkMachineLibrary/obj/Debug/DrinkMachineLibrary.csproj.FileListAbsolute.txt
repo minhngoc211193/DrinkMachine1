@@ -10,3 +10,9 @@ C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary
 C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
 C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.dll
 C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.pdb
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.dll
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\bin\Debug\DrinkMachineLibrary.pdb
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.AssemblyReference.cache
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.dll
+C:\Users\mingi\Downloads\DrinkMachine-main\DrinkMachine-main\DrinkMachine1\DrinkMachineLibrary\obj\Debug\DrinkMachineLibrary.pdb
