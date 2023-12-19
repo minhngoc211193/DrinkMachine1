@@ -61,7 +61,7 @@ namespace Client
                                     }
                                     catch (System.Exception)
                                     {
-                                        Console.WriteLine("Your input is wrong");
+                                        Console.WriteLine("Please choice your type of drink again");
                                     }
                                 } while (!inValid1);
                                 inValid = true;
@@ -92,7 +92,7 @@ namespace Client
                                     }
                                     catch (System.Exception)
                                     {
-                                        Console.WriteLine("Your input is wrong");
+                                        Console.WriteLine("Please choice your type of drink again");
                                     }
                                 } while (!inValid2);
                                 inValid = true;
@@ -122,7 +122,7 @@ namespace Client
                                     }
                                     catch (System.Exception)
                                     {
-                                        Console.WriteLine("Your input is wrong");
+                                        Console.WriteLine("Please choice your type of drink again");
                                     }
                                 } while (!inValid3);
                                 inValid = true;
@@ -135,7 +135,7 @@ namespace Client
                     }
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Your input is wrong");
+                        Console.WriteLine("Please choice your type of fruit again");
                     }
 
                     FruitCount++;

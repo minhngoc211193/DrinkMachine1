@@ -32,14 +32,10 @@ namespace DrinkMachineLibrary
                 Console.WriteLine("Cleanser is cleaning" + i + " %");
             }
             Console.WriteLine("Cleaned");
+            this.Off();
 
         }
-        public string CleanForMachine( int water)
-        {
-            this.turnOn = true;
-            this.Water = water;
-           return $"Bump " + water + " ml water into DrinkMachine";
-        }
+
         public bool Off()
         {
             this.turnOn = false;

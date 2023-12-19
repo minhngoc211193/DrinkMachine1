@@ -33,16 +33,7 @@ namespace DrinkMachineLibrary
             filter.On();
 
         }
-        //public DrinkMachine(Cleanser cleanser, Cutter cutter, Blender blender, Presser presser, Filter filter)
-        //{
-        //    cleanser.On();
-        //    cutter.On();
-        //    blender.On();
-        //    presser.On();
-        //    filter.On();
 
-
-        //}
         public void MakeOrangeJuice()
         {
             Console.WriteLine("Start Press Orange Juice");

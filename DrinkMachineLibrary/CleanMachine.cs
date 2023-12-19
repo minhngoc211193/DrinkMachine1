@@ -6,14 +6,27 @@ using System.Threading.Tasks;
 
 namespace DrinkMachineLibrary
 {
-    public class CleanMachine: Cleanser
+    public class CleanMachine
     {
-        public int Time {  get; set; }
         public int Section;
-
+        private bool TurnOn = false;
+        private int Water;
         public CleanMachine() 
         { 
-            Time = 0;
+            TurnOn  = false;
+            Section = 0;
+            Water = 0;
+        }
+        public bool On()
+        {
+            TurnOn= true;
+            return TurnOn;
+        }
+        public string CleanForMachine(int water)
+        {
+            this.On();
+            this.Water = water;
+            return $"Bump " + water + " ml water into DrinkMachine";
         }
         public string CleanMachine1(int section)
         {
@@ -28,6 +41,12 @@ namespace DrinkMachineLibrary
                 Console.Write(" Turn right =>");
             }
             return $" CleanMachine turn left " + section+ " time and turn right " +section+ " time";
+        }
+        public bool Off()
+        {
+            TurnOn= false;
+            Section = 0;
+            return TurnOn;
         }
     }
 }
