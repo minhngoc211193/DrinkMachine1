@@ -21,10 +21,10 @@ namespace DrinkMachineLibrary
             turnOn = true;
             return turnOn;
         }
-        public void Clean(bool turnon, int water)
+        public void Clean( int water)
         {
 
-            this.turnOn = turnon;
+            this.turnOn = true;
             this.Water = water;
             Console.WriteLine("Fruit is being soaked in " + water + " ml water");
             for (int i = 0; i <= 100; i += 50)
@@ -33,6 +33,12 @@ namespace DrinkMachineLibrary
             }
             Console.WriteLine("Cleaned");
 
+        }
+        public string CleanForMachine( int water)
+        {
+            this.turnOn = true;
+            this.Water = water;
+           return $"Bump " + water + " ml water into DrinkMachine";
         }
         public bool Off()
         {

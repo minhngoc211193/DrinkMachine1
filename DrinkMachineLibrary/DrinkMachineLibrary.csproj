@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Blender.cs" />
+    <Compile Include="CleanMachine.cs" />
     <Compile Include="Cleanser.cs" />
     <Compile Include="Cutter.cs" />
     <Compile Include="DrinkMachine.cs" />

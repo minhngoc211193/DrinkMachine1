@@ -12,92 +12,124 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            int x = 1;
-            while (x > 0)
+            
+            while (true)
             {
-                try {
-                    int choicetype;
-                    DrinkMachine may = new DrinkMachine();
-                    Console.WriteLine("Please choice type of Fruit");
-                    Console.WriteLine("1. Orange");
-                    Console.WriteLine("2. Watermelon");
-                    Console.WriteLine("3. Mango");
-                    int choice = Convert.ToInt32(Console.ReadLine());
-                    switch (choice)
+                bool inValid = false;
+                do
+                {
+                    try
                     {
-                        case 1://Orange
-                            try
-                            {
-                                Console.WriteLine("Choice the type of drink");
-                                Console.WriteLine("1.Smoothie");
-                                Console.WriteLine("2.Juice");
-                                choicetype = Convert.ToInt32(Console.ReadLine());
+                        int choicetype;
+                        DrinkMachine may = new DrinkMachine();
+                        Console.WriteLine("Please choice type of Fruit");
+                        Console.WriteLine("1. Orange");
+                        Console.WriteLine("2. Watermelon");
+                        Console.WriteLine("3. Mango");
+                        int choice = Convert.ToInt32(Console.ReadLine());
+                        switch (choice)
+                        {
+                            case 1://Orange
+                                bool inValid1 = false;
+                                do
+                                {
+                                    try
+                                    {
+                                        Console.WriteLine("Choice the type of drink");
+                                        Console.WriteLine("1.Smoothie");
+                                        Console.WriteLine("2.Juice");
+                                        choicetype = Convert.ToInt32(Console.ReadLine());
 
-                                switch (choicetype)
-                                {
-                                    case 1:
-                                        may.MakeOrangeSmoothie();
-                                        break;
-                                    case 2:
-                                        may.MakeOrangeJuice();
-                                        break;
-                                }
+                                        switch (choicetype)
+                                        {
 
-                            }
-                            catch (System.Exception)
-                            {
-                                Console.WriteLine("Your input is wrong");
-                            }
-                            break;
-                        case 2: //Watermelon
-                            try
-                            {
-                                Console.WriteLine("Choice the type of drink");
-                                Console.WriteLine("1.Smoothie");
-                                Console.WriteLine("2.Juice");
-                                choicetype = Convert.ToInt32(Console.ReadLine());
-                                switch (choicetype)
+                                            case 1:
+                                                may.MakeOrangeSmoothie();
+                                                inValid1 = true;
+                                                break;
+                                            case 2:
+                                                may.MakeOrangeJuice();
+                                                inValid1 = true;
+                                                break;
+                                        }
+
+                                    }
+                                    catch (System.Exception)
+                                    {
+                                        Console.WriteLine("Your input is wrong");
+                                    }
+                                } while (!inValid1);
+                                inValid = true;
+                                break;
+                            case 2: //Watermelon
+                                bool inValid2 = false;
+                                do
                                 {
-                                    case 1:
-                                        may.MakeWatermelonSmoothie();
-                                        break;
-                                    case 2:
-                                        may.MakeWatermelonJuice();
-                                        break;
-                                }
-                            } catch (System.Exception)
-                            {
-                                Console.WriteLine("Your input is wrong");
-                            }
-                            break;
-                        case 3://Mango
-                            try {
-                                Console.WriteLine("Choice the type of drink");
-                                Console.WriteLine("1.Smoothie");
-                                Console.WriteLine("2.Juice");
-                                choicetype = Convert.ToInt32(Console.ReadLine());
-                                switch (choicetype)
+                                    try
+                                    {
+
+                                        Console.WriteLine("Choice the type of drink");
+                                        Console.WriteLine("1.Smoothie");
+                                        Console.WriteLine("2.Juice");
+                                        choicetype = Convert.ToInt32(Console.ReadLine());
+                                        switch (choicetype)
+                                        {
+                                            case 1:
+                                                may.MakeWatermelonSmoothie();
+                                                inValid2 = true;
+                                                break;
+                                            case 2:
+                                                may.MakeWatermelonJuice();
+                                                inValid2 = true;
+                                                break;
+                                        }
+
+                                    }
+                                    catch (System.Exception)
+                                    {
+                                        Console.WriteLine("Your input is wrong");
+                                    }
+                                } while (!inValid2);
+                                inValid = true;
+                                break;
+                            case 3://Mango
+                                bool inValid3 = false;
+                                do
                                 {
-                                    case 1:
-                                        may.MakeMangoSmoothie();
-                                        break;
-                                    case 2:
-                                        may.MakeMangoJuice();
-                                        break;
-                                }
-                            }
-                            catch (System.Exception)
-                            {
-                                Console.WriteLine("Your input is wrong");
-                            }
-                            break;
+                                    try
+                                    {
+                                        Console.WriteLine("Choice the type of drink");
+                                        Console.WriteLine("1.Smoothie");
+                                        Console.WriteLine("2.Juice");
+                                        choicetype = Convert.ToInt32(Console.ReadLine());
+                                        switch (choicetype)
+                                        {
+                                            case 1:
+                                                may.MakeMangoSmoothie();
+                                                inValid3 = true;
+                                                break;
+                                            case 2:
+                                                may.MakeMangoJuice();
+                                                inValid3 = true;
+                                                break;
+                                        }
+                                    }
+                                    catch (System.Exception)
+                                    {
+                                        Console.WriteLine("Your input is wrong");
+                                    }
+                                } while (!inValid3);
+                                inValid = true;
+                                break;
+                        }
                     }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Your input is wrong");
+                    }
+                } while (!inValid);
                 }
-                catch(System.Exception) {
-                    Console.WriteLine("Your input is wrong");
-                }
-                }
-            Console.ReadKey();
+           // Console.ReadKey();
         } 
     }
     

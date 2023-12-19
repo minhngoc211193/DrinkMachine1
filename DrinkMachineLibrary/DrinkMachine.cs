@@ -14,6 +14,7 @@ namespace DrinkMachineLibrary
         private Blender blender;
         private Presser presser;
         private Filter filter;
+        private CleanMachine cleanmachine;
 
 
         private int Type { get; set; }
@@ -24,6 +25,7 @@ namespace DrinkMachineLibrary
             blender = new Blender();
             presser = new Presser();
             filter = new Filter();
+            cleanmachine = new CleanMachine();
             cleanser.On();
             cutter.On();
             blender.On();
@@ -44,7 +46,7 @@ namespace DrinkMachineLibrary
         public void MakeOrangeJuice()
         {
             Console.WriteLine("Start Press Orange Juice");
-            cleanser.Clean(true, 200);
+            cleanser.Clean(200);
             cutter.Cut(1);
             presser.Press(1);
             filter.Filt(1);
@@ -55,7 +57,7 @@ namespace DrinkMachineLibrary
         public void MakeOrangeSmoothie()
         {
             Console.WriteLine("Start Press Orange Smoothie");
-            cleanser.Clean(true, 200);
+            cleanser.Clean(200);
             cutter.Cut(1);
             blender.Minced(1);
       
@@ -65,7 +67,7 @@ namespace DrinkMachineLibrary
         public void MakeWatermelonJuice()
         {
             Console.WriteLine("Start Press Watermelon Juice");
-            cleanser.Clean(true, 400);
+            cleanser.Clean(400);
             cutter.Cut(2);
             presser.Press(2);
             filter.Filt(2);
@@ -74,7 +76,7 @@ namespace DrinkMachineLibrary
         public void MakeWatermelonSmoothie()
         {
             Console.WriteLine("Start Make Watermelon Smoothie");
-            cleanser.Clean(true, 400);
+            cleanser.Clean(400);
             cutter.Cut(2);
             blender.Puree(2);
             Console.WriteLine("Here are your watermelon smoothie");
@@ -82,7 +84,7 @@ namespace DrinkMachineLibrary
         public void MakeMangoJuice()
         {
             Console.WriteLine("Start Press Mango Juice");
-            cleanser.Clean(true, 300);
+            cleanser.Clean(300);
             cutter.Cut(3);
             presser.Press(3);
             filter.Filt(3);
@@ -91,11 +93,16 @@ namespace DrinkMachineLibrary
         public void MakeMangoSmoothie()
         {
             Console.WriteLine("Start Make Mango Smoothie");
-            cleanser.Clean(true, 300);
+            cleanser.Clean(300);
             cleanser.Off();
             cutter.Cut(3);
             blender.Puree(3);
             Console.WriteLine("Here are your Mango smoothie");
+        }
+        public void CleanMachine()
+        {
+            cleanmachine.CleanMachine1(2);
+            Console.WriteLine("Clean Successfull");
         }
 
 
