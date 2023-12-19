@@ -12,16 +12,19 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            
+            int FruitCount = 0;
             while (true)
             {
                 bool inValid = false;
                 do
                 {
+                   // int FruitCount = 0;
+                    DrinkMachine may = new DrinkMachine();
                     try
                     {
+                        
                         int choicetype;
-                        DrinkMachine may = new DrinkMachine();
+                        
                         Console.WriteLine("Please choice type of Fruit");
                         Console.WriteLine("1. Orange");
                         Console.WriteLine("2. Watermelon");
@@ -29,6 +32,7 @@ namespace Client
                         int choice = Convert.ToInt32(Console.ReadLine());
                         switch (choice)
                         {
+
                             case 1://Orange
                                 bool inValid1 = false;
                                 do
@@ -38,6 +42,7 @@ namespace Client
                                         Console.WriteLine("Choice the type of drink");
                                         Console.WriteLine("1.Smoothie");
                                         Console.WriteLine("2.Juice");
+
                                         choicetype = Convert.ToInt32(Console.ReadLine());
 
                                         switch (choicetype)
@@ -113,6 +118,7 @@ namespace Client
                                                 inValid3 = true;
                                                 break;
                                         }
+
                                     }
                                     catch (System.Exception)
                                     {
@@ -120,16 +126,29 @@ namespace Client
                                     }
                                 } while (!inValid3);
                                 inValid = true;
+
+
                                 break;
+
+
                         }
                     }
                     catch (System.Exception)
                     {
                         Console.WriteLine("Your input is wrong");
                     }
+
+                    FruitCount++;
+                    if (FruitCount ==2)
+                    {
+                        may.CleanMachine();
+                        FruitCount = 0;
+                    }
                 } while (!inValid);
+
                 }
-           // Console.ReadKey();
+          
+            // Console.ReadKey();
         } 
     }
     

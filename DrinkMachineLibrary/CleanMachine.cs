@@ -21,13 +21,13 @@ namespace DrinkMachineLibrary
             this.CleanForMachine(500);
             for(int i=0; i<=section; i++)
             {
-                 Console.Write("Turn left");
+                 Console.Write("Turn left =>");
             }
             for (int i = 0; i<=section; i++)
             {
-                Console.Write("Turn right");
+                Console.Write(" Turn right =>");
             }
-            return $"CleanMachine turn left " + section+ " time and turn right " +section+ " time";
+            return $" CleanMachine turn left " + section+ " time and turn right " +section+ " time";
         }
     }
 }

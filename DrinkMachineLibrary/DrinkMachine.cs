@@ -101,8 +101,9 @@ namespace DrinkMachineLibrary
         }
         public void CleanMachine()
         {
-            cleanmachine.CleanMachine1(2);
-            Console.WriteLine("Clean Successfull");
+            
+            string success = cleanmachine.CleanMachine1(2);
+            Console.WriteLine(success);
         }
 
 
